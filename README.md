@@ -1,16 +1,11 @@
 # Brain Expert Annotation Platform
 
-A Flask web app for expert annotation of synthetic vs. real **brain (glioma / GBM)**
-histopathology images. Two tasks:
+A Flask web app for expert annotation of synthetic vs. real histopathology images. Two tasks:
 
 - **Task 1 — Authenticity:** rate 50 images as *Real* or *Synthetic* (blinded, one at a time).
 - **Task 2 — Transitions:** for each of 50 transitions (original → synthetic counterfactual),
   tick the morphological features present in the original and counterfactual, and rate the
-  change of several graded aspects on a −2…+2 scale.
-
-Images are served from the public Hugging Face dataset
-[`zigulaura/IDHBrainDiff`](https://huggingface.co/datasets/zigulaura/IDHBrainDiff) and fetched
-at runtime, so no image files are needed to host the app.
+  change of several graded aspects.
 
 ## Setup
 
