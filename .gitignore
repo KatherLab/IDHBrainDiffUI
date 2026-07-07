@@ -4,6 +4,9 @@ __pycache__/
 *.pyc
 .claude/
 
+# server deploy artifact — machine-specific paths, never push
+ecosystem.config.cjs
+
 # per-rater results (keep the dir, not the data)
 results/*
 !results/.gitkeep
