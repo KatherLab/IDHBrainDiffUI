@@ -114,7 +114,11 @@ def ensure_shape(results, rater_id):
     return results
 
 
-# Serve images from local disk when possible, falling back to a HF proxy.
+# Images are always served same-origin: templates point <img> at Flask routes
+# (/task1/image/…, /task2/image/…), and Flask fetches from HuggingFace here,
+# server-side, then caches the bytes in memory. The browser never requests an
+# external URL, so nginx/CSP rules that block cross-origin image loads cannot
+# break image display (this was the failure mode in the earlier study UI).
 _hf_cache: dict = {}
 
 
@@ -122,9 +126,10 @@ def _proxy_hf(hf_url):
     if hf_url not in _hf_cache:
         try:
             req = urllib.request.Request(hf_url, headers={"User-Agent": "Mozilla/5.0"})
-            with urllib.request.urlopen(req, timeout=15) as resp:
+            with urllib.request.urlopen(req, timeout=20) as resp:
                 _hf_cache[hf_url] = resp.read()
         except Exception:
+            app.logger.warning("HF image fetch failed: %s", hf_url)
             return "Image not found", 404
     response = send_file(io.BytesIO(_hf_cache[hf_url]), mimetype="image/png")
     response.headers["Cache-Control"] = "public, max-age=86400"
