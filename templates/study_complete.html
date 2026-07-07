@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% block title %}Study Complete — Thank You{% endblock %}
+
+{% block content %}
+<div class="card card-center animate-in">
+  <svg class="check-svg" viewBox="0 0 52 52" xmlns="http://www.w3.org/2000/svg">
+    <circle class="check-circle" cx="26" cy="26" r="24"/>
+    <path class="check-path" d="M14 27 l8 8 l16-16"/>
+  </svg>
+  <h2>Thank You!</h2>
+  <p>Your annotations have been saved.</p>
+  <p>Rater ID: <strong>{{ rater_id }}</strong></p>
+
+  <div class="mini-summary">
+    <div class="summary-stat">
+      <span class="stat-number">{{ task1_done }}/{{ n_task1 }}</span>
+      <span class="stat-label">Task 1 rated</span>
+    </div>
+    <div class="summary-stat">
+      <span class="stat-number">{{ task2_done }}/{{ n_task2 }}</span>
+      <span class="stat-label">Task 2 transitions</span>
+    </div>
+  </div>
+
+  <table class="summary-table">
+    <tr><th>Task 1 — rated Real</th><td>{{ n_real }}</td></tr>
+    <tr><th>Task 1 — rated Synthetic</th><td>{{ n_synthetic }}</td></tr>
+  </table>
+
+  {% if incomplete.task1 or incomplete.task2 %}
+  <div class="info-box" style="border-left:4px solid #e67e22;background:#fff8f0;margin-top:1rem;">
+    <p style="font-weight:600;color:#e67e22;margin:0 0 0.5rem;">&#9888; Not everything is complete yet:</p>
+    <ul style="margin:0;padding-left:1.2rem;color:#555;line-height:1.8;">
+      {% if incomplete.task1 %}<li>Task 1 is incomplete ({{ task1_done }}/{{ n_task1 }}).</li>{% endif %}
+      {% if incomplete.task2 %}<li>Task 2 is incomplete ({{ task2_done }}/{{ n_task2 }}).</li>{% endif %}
+    </ul>
+    <p style="margin:0.75rem 0 0;">
+      <a href="{{ url_for('task1', img_idx=0) }}" class="btn btn-secondary">Go back to Task 1</a>
+      <a href="{{ url_for('task2', t_idx=0) }}" class="btn btn-secondary">Go to Task 2</a>
+    </p>
+  </div>
+  {% else %}
+  <p class="thank-you-note">
+    Your responses are valuable to this research. Thank you for your time and expertise.
+  </p>
+  {% endif %}
+</div>
+{% endblock %}

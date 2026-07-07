@@ -1,0 +1,1814 @@
+{
+  "generated_at": "2026-07-07T15:05:44.114125+00:00",
+  "title": "Brain User Study",
+  "seed": 42,
+  "hf_repo": "zigulaura/IDHBrainDiff",
+  "task1": {
+    "images": [
+      {
+        "img_id": "t1_0000",
+        "filename": "img_025.png",
+        "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task1/img_025.png"
+      },
+      {
+        "img_id": "t1_0001",
+        "filename": "img_023.png",
+        "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task1/img_023.png"
+      },
+      {
+        "img_id": "t1_0002",
+        "filename": "img_019.png",
+        "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task1/img_019.png"
+      },
+      {
+        "img_id": "t1_0003",
+        "filename": "img_011.png",
+        "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task1/img_011.png"
+      },
+      {
+        "img_id": "t1_0004",
+        "filename": "img_004.png",
+        "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task1/img_004.png"
+      },
+      {
+        "img_id": "t1_0005",
+        "filename": "img_045.png",
+        "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task1/img_045.png"
+      },
+      {
+        "img_id": "t1_0006",
+        "filename": "img_026.png",
+        "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task1/img_026.png"
+      },
+      {
+        "img_id": "t1_0007",
+        "filename": "img_009.png",
+        "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task1/img_009.png"
+      },
+      {
+        "img_id": "t1_0008",
+        "filename": "img_029.png",
+        "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task1/img_029.png"
+      },
+      {
+        "img_id": "t1_0009",
+        "filename": "img_016.png",
+        "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task1/img_016.png"
+      },
+      {
+        "img_id": "t1_0010",
+        "filename": "img_031.png",
+        "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task1/img_031.png"
+      },
+      {
+        "img_id": "t1_0011",
+        "filename": "img_021.png",
+        "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task1/img_021.png"
+      },
+      {
+        "img_id": "t1_0012",
+        "filename": "img_012.png",
+        "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task1/img_012.png"
+      },
+      {
+        "img_id": "t1_0013",
+        "filename": "img_003.png",
+        "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task1/img_003.png"
+      },
+      {
+        "img_id": "t1_0014",
+        "filename": "img_039.png",
+        "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task1/img_039.png"
+      },
+      {
+        "img_id": "t1_0015",
+        "filename": "img_038.png",
+        "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task1/img_038.png"
+      },
+      {
+        "img_id": "t1_0016",
+        "filename": "img_010.png",
+        "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task1/img_010.png"
+      },
+      {
+        "img_id": "t1_0017",
+        "filename": "img_024.png",
+        "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task1/img_024.png"
+      },
+      {
+        "img_id": "t1_0018",
+        "filename": "img_035.png",
+        "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task1/img_035.png"
+      },
+      {
+        "img_id": "t1_0019",
+        "filename": "img_000.png",
+        "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task1/img_000.png"
+      },
+      {
+        "img_id": "t1_0020",
+        "filename": "img_043.png",
+        "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task1/img_043.png"
+      },
+      {
+        "img_id": "t1_0021",
+        "filename": "img_018.png",
+        "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task1/img_018.png"
+      },
+      {
+        "img_id": "t1_0022",
+        "filename": "img_033.png",
+        "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task1/img_033.png"
+      },
+      {
+        "img_id": "t1_0023",
+        "filename": "img_048.png",
+        "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task1/img_048.png"
+      },
+      {
+        "img_id": "t1_0024",
+        "filename": "img_041.png",
+        "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task1/img_041.png"
+      },
+      {
+        "img_id": "t1_0025",
+        "filename": "img_030.png",
+        "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task1/img_030.png"
+      },
+      {
+        "img_id": "t1_0026",
+        "filename": "img_028.png",
+        "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task1/img_028.png"
+      },
+      {
+        "img_id": "t1_0027",
+        "filename": "img_020.png",
+        "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task1/img_020.png"
+      },
+      {
+        "img_id": "t1_0028",
+        "filename": "img_022.png",
+        "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task1/img_022.png"
+      },
+      {
+        "img_id": "t1_0029",
+        "filename": "img_042.png",
+        "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task1/img_042.png"
+      },
+      {
+        "img_id": "t1_0030",
+        "filename": "img_046.png",
+        "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task1/img_046.png"
+      },
+      {
+        "img_id": "t1_0031",
+        "filename": "img_036.png",
+        "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task1/img_036.png"
+      },
+      {
+        "img_id": "t1_0032",
+        "filename": "img_032.png",
+        "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task1/img_032.png"
+      },
+      {
+        "img_id": "t1_0033",
+        "filename": "img_044.png",
+        "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task1/img_044.png"
+      },
+      {
+        "img_id": "t1_0034",
+        "filename": "img_013.png",
+        "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task1/img_013.png"
+      },
+      {
+        "img_id": "t1_0035",
+        "filename": "img_049.png",
+        "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task1/img_049.png"
+      },
+      {
+        "img_id": "t1_0036",
+        "filename": "img_047.png",
+        "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task1/img_047.png"
+      },
+      {
+        "img_id": "t1_0037",
+        "filename": "img_002.png",
+        "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task1/img_002.png"
+      },
+      {
+        "img_id": "t1_0038",
+        "filename": "img_027.png",
+        "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task1/img_027.png"
+      },
+      {
+        "img_id": "t1_0039",
+        "filename": "img_037.png",
+        "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task1/img_037.png"
+      },
+      {
+        "img_id": "t1_0040",
+        "filename": "img_005.png",
+        "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task1/img_005.png"
+      },
+      {
+        "img_id": "t1_0041",
+        "filename": "img_034.png",
+        "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task1/img_034.png"
+      },
+      {
+        "img_id": "t1_0042",
+        "filename": "img_006.png",
+        "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task1/img_006.png"
+      },
+      {
+        "img_id": "t1_0043",
+        "filename": "img_008.png",
+        "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task1/img_008.png"
+      },
+      {
+        "img_id": "t1_0044",
+        "filename": "img_014.png",
+        "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task1/img_014.png"
+      },
+      {
+        "img_id": "t1_0045",
+        "filename": "img_015.png",
+        "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task1/img_015.png"
+      },
+      {
+        "img_id": "t1_0046",
+        "filename": "img_017.png",
+        "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task1/img_017.png"
+      },
+      {
+        "img_id": "t1_0047",
+        "filename": "img_001.png",
+        "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task1/img_001.png"
+      },
+      {
+        "img_id": "t1_0048",
+        "filename": "img_007.png",
+        "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task1/img_007.png"
+      },
+      {
+        "img_id": "t1_0049",
+        "filename": "img_040.png",
+        "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task1/img_040.png"
+      }
+    ]
+  },
+  "task2": {
+    "transitions": [
+      {
+        "transition_id": "t2_0000",
+        "folder": "S001",
+        "images": [
+          {
+            "img_id": "t2_0000_p0",
+            "filename": "0_original.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S001/0_original.png"
+          },
+          {
+            "img_id": "t2_0000_p1",
+            "filename": "1_amp_020.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S001/1_amp_020.png"
+          },
+          {
+            "img_id": "t2_0000_p2",
+            "filename": "2_amp_040.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S001/2_amp_040.png"
+          },
+          {
+            "img_id": "t2_0000_p3",
+            "filename": "3_amp_060.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S001/3_amp_060.png"
+          },
+          {
+            "img_id": "t2_0000_p4",
+            "filename": "4_amp_080.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S001/4_amp_080.png"
+          }
+        ]
+      },
+      {
+        "transition_id": "t2_0001",
+        "folder": "S002",
+        "images": [
+          {
+            "img_id": "t2_0001_p0",
+            "filename": "0_original.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S002/0_original.png"
+          },
+          {
+            "img_id": "t2_0001_p1",
+            "filename": "1_amp_020.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S002/1_amp_020.png"
+          },
+          {
+            "img_id": "t2_0001_p2",
+            "filename": "2_amp_040.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S002/2_amp_040.png"
+          },
+          {
+            "img_id": "t2_0001_p3",
+            "filename": "3_amp_060.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S002/3_amp_060.png"
+          },
+          {
+            "img_id": "t2_0001_p4",
+            "filename": "4_amp_080.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S002/4_amp_080.png"
+          }
+        ]
+      },
+      {
+        "transition_id": "t2_0002",
+        "folder": "S003",
+        "images": [
+          {
+            "img_id": "t2_0002_p0",
+            "filename": "0_original.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S003/0_original.png"
+          },
+          {
+            "img_id": "t2_0002_p1",
+            "filename": "1_amp_020.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S003/1_amp_020.png"
+          },
+          {
+            "img_id": "t2_0002_p2",
+            "filename": "2_amp_040.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S003/2_amp_040.png"
+          },
+          {
+            "img_id": "t2_0002_p3",
+            "filename": "3_amp_060.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S003/3_amp_060.png"
+          },
+          {
+            "img_id": "t2_0002_p4",
+            "filename": "4_amp_080.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S003/4_amp_080.png"
+          }
+        ]
+      },
+      {
+        "transition_id": "t2_0003",
+        "folder": "S004",
+        "images": [
+          {
+            "img_id": "t2_0003_p0",
+            "filename": "0_original.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S004/0_original.png"
+          },
+          {
+            "img_id": "t2_0003_p1",
+            "filename": "1_amp_020.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S004/1_amp_020.png"
+          },
+          {
+            "img_id": "t2_0003_p2",
+            "filename": "2_amp_040.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S004/2_amp_040.png"
+          },
+          {
+            "img_id": "t2_0003_p3",
+            "filename": "3_amp_060.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S004/3_amp_060.png"
+          },
+          {
+            "img_id": "t2_0003_p4",
+            "filename": "4_amp_080.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S004/4_amp_080.png"
+          }
+        ]
+      },
+      {
+        "transition_id": "t2_0004",
+        "folder": "S005",
+        "images": [
+          {
+            "img_id": "t2_0004_p0",
+            "filename": "0_original.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S005/0_original.png"
+          },
+          {
+            "img_id": "t2_0004_p1",
+            "filename": "1_amp_020.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S005/1_amp_020.png"
+          },
+          {
+            "img_id": "t2_0004_p2",
+            "filename": "2_amp_040.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S005/2_amp_040.png"
+          },
+          {
+            "img_id": "t2_0004_p3",
+            "filename": "3_amp_060.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S005/3_amp_060.png"
+          },
+          {
+            "img_id": "t2_0004_p4",
+            "filename": "4_amp_080.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S005/4_amp_080.png"
+          }
+        ]
+      },
+      {
+        "transition_id": "t2_0005",
+        "folder": "S006",
+        "images": [
+          {
+            "img_id": "t2_0005_p0",
+            "filename": "0_original.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S006/0_original.png"
+          },
+          {
+            "img_id": "t2_0005_p1",
+            "filename": "1_amp_020.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S006/1_amp_020.png"
+          },
+          {
+            "img_id": "t2_0005_p2",
+            "filename": "2_amp_040.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S006/2_amp_040.png"
+          },
+          {
+            "img_id": "t2_0005_p3",
+            "filename": "3_amp_060.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S006/3_amp_060.png"
+          },
+          {
+            "img_id": "t2_0005_p4",
+            "filename": "4_amp_080.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S006/4_amp_080.png"
+          }
+        ]
+      },
+      {
+        "transition_id": "t2_0006",
+        "folder": "S007",
+        "images": [
+          {
+            "img_id": "t2_0006_p0",
+            "filename": "0_original.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S007/0_original.png"
+          },
+          {
+            "img_id": "t2_0006_p1",
+            "filename": "1_amp_020.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S007/1_amp_020.png"
+          },
+          {
+            "img_id": "t2_0006_p2",
+            "filename": "2_amp_040.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S007/2_amp_040.png"
+          },
+          {
+            "img_id": "t2_0006_p3",
+            "filename": "3_amp_060.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S007/3_amp_060.png"
+          },
+          {
+            "img_id": "t2_0006_p4",
+            "filename": "4_amp_080.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S007/4_amp_080.png"
+          }
+        ]
+      },
+      {
+        "transition_id": "t2_0007",
+        "folder": "S008",
+        "images": [
+          {
+            "img_id": "t2_0007_p0",
+            "filename": "0_original.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S008/0_original.png"
+          },
+          {
+            "img_id": "t2_0007_p1",
+            "filename": "1_amp_020.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S008/1_amp_020.png"
+          },
+          {
+            "img_id": "t2_0007_p2",
+            "filename": "2_amp_040.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S008/2_amp_040.png"
+          },
+          {
+            "img_id": "t2_0007_p3",
+            "filename": "3_amp_060.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S008/3_amp_060.png"
+          },
+          {
+            "img_id": "t2_0007_p4",
+            "filename": "4_amp_080.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S008/4_amp_080.png"
+          }
+        ]
+      },
+      {
+        "transition_id": "t2_0008",
+        "folder": "S009",
+        "images": [
+          {
+            "img_id": "t2_0008_p0",
+            "filename": "0_original.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S009/0_original.png"
+          },
+          {
+            "img_id": "t2_0008_p1",
+            "filename": "1_amp_020.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S009/1_amp_020.png"
+          },
+          {
+            "img_id": "t2_0008_p2",
+            "filename": "2_amp_040.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S009/2_amp_040.png"
+          },
+          {
+            "img_id": "t2_0008_p3",
+            "filename": "3_amp_060.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S009/3_amp_060.png"
+          },
+          {
+            "img_id": "t2_0008_p4",
+            "filename": "4_amp_080.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S009/4_amp_080.png"
+          }
+        ]
+      },
+      {
+        "transition_id": "t2_0009",
+        "folder": "S010",
+        "images": [
+          {
+            "img_id": "t2_0009_p0",
+            "filename": "0_original.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S010/0_original.png"
+          },
+          {
+            "img_id": "t2_0009_p1",
+            "filename": "1_amp_020.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S010/1_amp_020.png"
+          },
+          {
+            "img_id": "t2_0009_p2",
+            "filename": "2_amp_040.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S010/2_amp_040.png"
+          },
+          {
+            "img_id": "t2_0009_p3",
+            "filename": "3_amp_060.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S010/3_amp_060.png"
+          },
+          {
+            "img_id": "t2_0009_p4",
+            "filename": "4_amp_080.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S010/4_amp_080.png"
+          }
+        ]
+      },
+      {
+        "transition_id": "t2_0010",
+        "folder": "S011",
+        "images": [
+          {
+            "img_id": "t2_0010_p0",
+            "filename": "0_original.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S011/0_original.png"
+          },
+          {
+            "img_id": "t2_0010_p1",
+            "filename": "1_amp_020.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S011/1_amp_020.png"
+          },
+          {
+            "img_id": "t2_0010_p2",
+            "filename": "2_amp_040.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S011/2_amp_040.png"
+          },
+          {
+            "img_id": "t2_0010_p3",
+            "filename": "3_amp_060.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S011/3_amp_060.png"
+          },
+          {
+            "img_id": "t2_0010_p4",
+            "filename": "4_amp_080.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S011/4_amp_080.png"
+          }
+        ]
+      },
+      {
+        "transition_id": "t2_0011",
+        "folder": "S012",
+        "images": [
+          {
+            "img_id": "t2_0011_p0",
+            "filename": "0_original.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S012/0_original.png"
+          },
+          {
+            "img_id": "t2_0011_p1",
+            "filename": "1_amp_020.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S012/1_amp_020.png"
+          },
+          {
+            "img_id": "t2_0011_p2",
+            "filename": "2_amp_040.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S012/2_amp_040.png"
+          },
+          {
+            "img_id": "t2_0011_p3",
+            "filename": "3_amp_060.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S012/3_amp_060.png"
+          },
+          {
+            "img_id": "t2_0011_p4",
+            "filename": "4_amp_080.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S012/4_amp_080.png"
+          }
+        ]
+      },
+      {
+        "transition_id": "t2_0012",
+        "folder": "S013",
+        "images": [
+          {
+            "img_id": "t2_0012_p0",
+            "filename": "0_original.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S013/0_original.png"
+          },
+          {
+            "img_id": "t2_0012_p1",
+            "filename": "1_amp_020.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S013/1_amp_020.png"
+          },
+          {
+            "img_id": "t2_0012_p2",
+            "filename": "2_amp_040.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S013/2_amp_040.png"
+          },
+          {
+            "img_id": "t2_0012_p3",
+            "filename": "3_amp_060.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S013/3_amp_060.png"
+          },
+          {
+            "img_id": "t2_0012_p4",
+            "filename": "4_amp_080.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S013/4_amp_080.png"
+          }
+        ]
+      },
+      {
+        "transition_id": "t2_0013",
+        "folder": "S014",
+        "images": [
+          {
+            "img_id": "t2_0013_p0",
+            "filename": "0_original.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S014/0_original.png"
+          },
+          {
+            "img_id": "t2_0013_p1",
+            "filename": "1_amp_020.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S014/1_amp_020.png"
+          },
+          {
+            "img_id": "t2_0013_p2",
+            "filename": "2_amp_040.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S014/2_amp_040.png"
+          },
+          {
+            "img_id": "t2_0013_p3",
+            "filename": "3_amp_060.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S014/3_amp_060.png"
+          },
+          {
+            "img_id": "t2_0013_p4",
+            "filename": "4_amp_080.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S014/4_amp_080.png"
+          }
+        ]
+      },
+      {
+        "transition_id": "t2_0014",
+        "folder": "S015",
+        "images": [
+          {
+            "img_id": "t2_0014_p0",
+            "filename": "0_original.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S015/0_original.png"
+          },
+          {
+            "img_id": "t2_0014_p1",
+            "filename": "1_amp_020.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S015/1_amp_020.png"
+          },
+          {
+            "img_id": "t2_0014_p2",
+            "filename": "2_amp_040.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S015/2_amp_040.png"
+          },
+          {
+            "img_id": "t2_0014_p3",
+            "filename": "3_amp_060.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S015/3_amp_060.png"
+          },
+          {
+            "img_id": "t2_0014_p4",
+            "filename": "4_amp_080.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S015/4_amp_080.png"
+          }
+        ]
+      },
+      {
+        "transition_id": "t2_0015",
+        "folder": "S016",
+        "images": [
+          {
+            "img_id": "t2_0015_p0",
+            "filename": "0_original.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S016/0_original.png"
+          },
+          {
+            "img_id": "t2_0015_p1",
+            "filename": "1_amp_020.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S016/1_amp_020.png"
+          },
+          {
+            "img_id": "t2_0015_p2",
+            "filename": "2_amp_040.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S016/2_amp_040.png"
+          },
+          {
+            "img_id": "t2_0015_p3",
+            "filename": "3_amp_060.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S016/3_amp_060.png"
+          },
+          {
+            "img_id": "t2_0015_p4",
+            "filename": "4_amp_080.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S016/4_amp_080.png"
+          }
+        ]
+      },
+      {
+        "transition_id": "t2_0016",
+        "folder": "S017",
+        "images": [
+          {
+            "img_id": "t2_0016_p0",
+            "filename": "0_original.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S017/0_original.png"
+          },
+          {
+            "img_id": "t2_0016_p1",
+            "filename": "1_amp_020.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S017/1_amp_020.png"
+          },
+          {
+            "img_id": "t2_0016_p2",
+            "filename": "2_amp_040.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S017/2_amp_040.png"
+          },
+          {
+            "img_id": "t2_0016_p3",
+            "filename": "3_amp_060.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S017/3_amp_060.png"
+          },
+          {
+            "img_id": "t2_0016_p4",
+            "filename": "4_amp_080.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S017/4_amp_080.png"
+          }
+        ]
+      },
+      {
+        "transition_id": "t2_0017",
+        "folder": "S018",
+        "images": [
+          {
+            "img_id": "t2_0017_p0",
+            "filename": "0_original.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S018/0_original.png"
+          },
+          {
+            "img_id": "t2_0017_p1",
+            "filename": "1_amp_020.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S018/1_amp_020.png"
+          },
+          {
+            "img_id": "t2_0017_p2",
+            "filename": "2_amp_040.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S018/2_amp_040.png"
+          },
+          {
+            "img_id": "t2_0017_p3",
+            "filename": "3_amp_060.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S018/3_amp_060.png"
+          },
+          {
+            "img_id": "t2_0017_p4",
+            "filename": "4_amp_080.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S018/4_amp_080.png"
+          }
+        ]
+      },
+      {
+        "transition_id": "t2_0018",
+        "folder": "S019",
+        "images": [
+          {
+            "img_id": "t2_0018_p0",
+            "filename": "0_original.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S019/0_original.png"
+          },
+          {
+            "img_id": "t2_0018_p1",
+            "filename": "1_amp_020.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S019/1_amp_020.png"
+          },
+          {
+            "img_id": "t2_0018_p2",
+            "filename": "2_amp_040.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S019/2_amp_040.png"
+          },
+          {
+            "img_id": "t2_0018_p3",
+            "filename": "3_amp_060.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S019/3_amp_060.png"
+          },
+          {
+            "img_id": "t2_0018_p4",
+            "filename": "4_amp_080.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S019/4_amp_080.png"
+          }
+        ]
+      },
+      {
+        "transition_id": "t2_0019",
+        "folder": "S020",
+        "images": [
+          {
+            "img_id": "t2_0019_p0",
+            "filename": "0_original.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S020/0_original.png"
+          },
+          {
+            "img_id": "t2_0019_p1",
+            "filename": "1_amp_020.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S020/1_amp_020.png"
+          },
+          {
+            "img_id": "t2_0019_p2",
+            "filename": "2_amp_040.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S020/2_amp_040.png"
+          },
+          {
+            "img_id": "t2_0019_p3",
+            "filename": "3_amp_060.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S020/3_amp_060.png"
+          },
+          {
+            "img_id": "t2_0019_p4",
+            "filename": "4_amp_080.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S020/4_amp_080.png"
+          }
+        ]
+      },
+      {
+        "transition_id": "t2_0020",
+        "folder": "S021",
+        "images": [
+          {
+            "img_id": "t2_0020_p0",
+            "filename": "0_original.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S021/0_original.png"
+          },
+          {
+            "img_id": "t2_0020_p1",
+            "filename": "1_amp_020.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S021/1_amp_020.png"
+          },
+          {
+            "img_id": "t2_0020_p2",
+            "filename": "2_amp_040.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S021/2_amp_040.png"
+          },
+          {
+            "img_id": "t2_0020_p3",
+            "filename": "3_amp_060.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S021/3_amp_060.png"
+          },
+          {
+            "img_id": "t2_0020_p4",
+            "filename": "4_amp_080.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S021/4_amp_080.png"
+          }
+        ]
+      },
+      {
+        "transition_id": "t2_0021",
+        "folder": "S022",
+        "images": [
+          {
+            "img_id": "t2_0021_p0",
+            "filename": "0_original.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S022/0_original.png"
+          },
+          {
+            "img_id": "t2_0021_p1",
+            "filename": "1_amp_020.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S022/1_amp_020.png"
+          },
+          {
+            "img_id": "t2_0021_p2",
+            "filename": "2_amp_040.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S022/2_amp_040.png"
+          },
+          {
+            "img_id": "t2_0021_p3",
+            "filename": "3_amp_060.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S022/3_amp_060.png"
+          },
+          {
+            "img_id": "t2_0021_p4",
+            "filename": "4_amp_080.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S022/4_amp_080.png"
+          }
+        ]
+      },
+      {
+        "transition_id": "t2_0022",
+        "folder": "S023",
+        "images": [
+          {
+            "img_id": "t2_0022_p0",
+            "filename": "0_original.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S023/0_original.png"
+          },
+          {
+            "img_id": "t2_0022_p1",
+            "filename": "1_amp_020.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S023/1_amp_020.png"
+          },
+          {
+            "img_id": "t2_0022_p2",
+            "filename": "2_amp_040.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S023/2_amp_040.png"
+          },
+          {
+            "img_id": "t2_0022_p3",
+            "filename": "3_amp_060.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S023/3_amp_060.png"
+          },
+          {
+            "img_id": "t2_0022_p4",
+            "filename": "4_amp_080.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S023/4_amp_080.png"
+          }
+        ]
+      },
+      {
+        "transition_id": "t2_0023",
+        "folder": "S024",
+        "images": [
+          {
+            "img_id": "t2_0023_p0",
+            "filename": "0_original.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S024/0_original.png"
+          },
+          {
+            "img_id": "t2_0023_p1",
+            "filename": "1_amp_020.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S024/1_amp_020.png"
+          },
+          {
+            "img_id": "t2_0023_p2",
+            "filename": "2_amp_040.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S024/2_amp_040.png"
+          },
+          {
+            "img_id": "t2_0023_p3",
+            "filename": "3_amp_060.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S024/3_amp_060.png"
+          },
+          {
+            "img_id": "t2_0023_p4",
+            "filename": "4_amp_080.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S024/4_amp_080.png"
+          }
+        ]
+      },
+      {
+        "transition_id": "t2_0024",
+        "folder": "S025",
+        "images": [
+          {
+            "img_id": "t2_0024_p0",
+            "filename": "0_original.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S025/0_original.png"
+          },
+          {
+            "img_id": "t2_0024_p1",
+            "filename": "1_amp_020.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S025/1_amp_020.png"
+          },
+          {
+            "img_id": "t2_0024_p2",
+            "filename": "2_amp_040.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S025/2_amp_040.png"
+          },
+          {
+            "img_id": "t2_0024_p3",
+            "filename": "3_amp_060.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S025/3_amp_060.png"
+          },
+          {
+            "img_id": "t2_0024_p4",
+            "filename": "4_amp_080.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S025/4_amp_080.png"
+          }
+        ]
+      },
+      {
+        "transition_id": "t2_0025",
+        "folder": "S026",
+        "images": [
+          {
+            "img_id": "t2_0025_p0",
+            "filename": "0_original.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S026/0_original.png"
+          },
+          {
+            "img_id": "t2_0025_p1",
+            "filename": "1_amp_020.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S026/1_amp_020.png"
+          },
+          {
+            "img_id": "t2_0025_p2",
+            "filename": "2_amp_040.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S026/2_amp_040.png"
+          },
+          {
+            "img_id": "t2_0025_p3",
+            "filename": "3_amp_060.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S026/3_amp_060.png"
+          },
+          {
+            "img_id": "t2_0025_p4",
+            "filename": "4_amp_080.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S026/4_amp_080.png"
+          }
+        ]
+      },
+      {
+        "transition_id": "t2_0026",
+        "folder": "S027",
+        "images": [
+          {
+            "img_id": "t2_0026_p0",
+            "filename": "0_original.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S027/0_original.png"
+          },
+          {
+            "img_id": "t2_0026_p1",
+            "filename": "1_amp_020.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S027/1_amp_020.png"
+          },
+          {
+            "img_id": "t2_0026_p2",
+            "filename": "2_amp_040.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S027/2_amp_040.png"
+          },
+          {
+            "img_id": "t2_0026_p3",
+            "filename": "3_amp_060.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S027/3_amp_060.png"
+          },
+          {
+            "img_id": "t2_0026_p4",
+            "filename": "4_amp_080.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S027/4_amp_080.png"
+          }
+        ]
+      },
+      {
+        "transition_id": "t2_0027",
+        "folder": "S028",
+        "images": [
+          {
+            "img_id": "t2_0027_p0",
+            "filename": "0_original.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S028/0_original.png"
+          },
+          {
+            "img_id": "t2_0027_p1",
+            "filename": "1_amp_020.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S028/1_amp_020.png"
+          },
+          {
+            "img_id": "t2_0027_p2",
+            "filename": "2_amp_040.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S028/2_amp_040.png"
+          },
+          {
+            "img_id": "t2_0027_p3",
+            "filename": "3_amp_060.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S028/3_amp_060.png"
+          },
+          {
+            "img_id": "t2_0027_p4",
+            "filename": "4_amp_080.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S028/4_amp_080.png"
+          }
+        ]
+      },
+      {
+        "transition_id": "t2_0028",
+        "folder": "S029",
+        "images": [
+          {
+            "img_id": "t2_0028_p0",
+            "filename": "0_original.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S029/0_original.png"
+          },
+          {
+            "img_id": "t2_0028_p1",
+            "filename": "1_amp_020.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S029/1_amp_020.png"
+          },
+          {
+            "img_id": "t2_0028_p2",
+            "filename": "2_amp_040.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S029/2_amp_040.png"
+          },
+          {
+            "img_id": "t2_0028_p3",
+            "filename": "3_amp_060.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S029/3_amp_060.png"
+          },
+          {
+            "img_id": "t2_0028_p4",
+            "filename": "4_amp_080.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S029/4_amp_080.png"
+          }
+        ]
+      },
+      {
+        "transition_id": "t2_0029",
+        "folder": "S030",
+        "images": [
+          {
+            "img_id": "t2_0029_p0",
+            "filename": "0_original.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S030/0_original.png"
+          },
+          {
+            "img_id": "t2_0029_p1",
+            "filename": "1_amp_020.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S030/1_amp_020.png"
+          },
+          {
+            "img_id": "t2_0029_p2",
+            "filename": "2_amp_040.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S030/2_amp_040.png"
+          },
+          {
+            "img_id": "t2_0029_p3",
+            "filename": "3_amp_060.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S030/3_amp_060.png"
+          },
+          {
+            "img_id": "t2_0029_p4",
+            "filename": "4_amp_080.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S030/4_amp_080.png"
+          }
+        ]
+      },
+      {
+        "transition_id": "t2_0030",
+        "folder": "S031",
+        "images": [
+          {
+            "img_id": "t2_0030_p0",
+            "filename": "0_original.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S031/0_original.png"
+          },
+          {
+            "img_id": "t2_0030_p1",
+            "filename": "1_amp_020.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S031/1_amp_020.png"
+          },
+          {
+            "img_id": "t2_0030_p2",
+            "filename": "2_amp_040.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S031/2_amp_040.png"
+          },
+          {
+            "img_id": "t2_0030_p3",
+            "filename": "3_amp_060.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S031/3_amp_060.png"
+          },
+          {
+            "img_id": "t2_0030_p4",
+            "filename": "4_amp_080.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S031/4_amp_080.png"
+          }
+        ]
+      },
+      {
+        "transition_id": "t2_0031",
+        "folder": "S032",
+        "images": [
+          {
+            "img_id": "t2_0031_p0",
+            "filename": "0_original.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S032/0_original.png"
+          },
+          {
+            "img_id": "t2_0031_p1",
+            "filename": "1_amp_020.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S032/1_amp_020.png"
+          },
+          {
+            "img_id": "t2_0031_p2",
+            "filename": "2_amp_040.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S032/2_amp_040.png"
+          },
+          {
+            "img_id": "t2_0031_p3",
+            "filename": "3_amp_060.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S032/3_amp_060.png"
+          },
+          {
+            "img_id": "t2_0031_p4",
+            "filename": "4_amp_080.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S032/4_amp_080.png"
+          }
+        ]
+      },
+      {
+        "transition_id": "t2_0032",
+        "folder": "S033",
+        "images": [
+          {
+            "img_id": "t2_0032_p0",
+            "filename": "0_original.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S033/0_original.png"
+          },
+          {
+            "img_id": "t2_0032_p1",
+            "filename": "1_amp_020.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S033/1_amp_020.png"
+          },
+          {
+            "img_id": "t2_0032_p2",
+            "filename": "2_amp_040.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S033/2_amp_040.png"
+          },
+          {
+            "img_id": "t2_0032_p3",
+            "filename": "3_amp_060.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S033/3_amp_060.png"
+          },
+          {
+            "img_id": "t2_0032_p4",
+            "filename": "4_amp_080.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S033/4_amp_080.png"
+          }
+        ]
+      },
+      {
+        "transition_id": "t2_0033",
+        "folder": "S034",
+        "images": [
+          {
+            "img_id": "t2_0033_p0",
+            "filename": "0_original.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S034/0_original.png"
+          },
+          {
+            "img_id": "t2_0033_p1",
+            "filename": "1_amp_020.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S034/1_amp_020.png"
+          },
+          {
+            "img_id": "t2_0033_p2",
+            "filename": "2_amp_040.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S034/2_amp_040.png"
+          },
+          {
+            "img_id": "t2_0033_p3",
+            "filename": "3_amp_060.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S034/3_amp_060.png"
+          },
+          {
+            "img_id": "t2_0033_p4",
+            "filename": "4_amp_080.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S034/4_amp_080.png"
+          }
+        ]
+      },
+      {
+        "transition_id": "t2_0034",
+        "folder": "S035",
+        "images": [
+          {
+            "img_id": "t2_0034_p0",
+            "filename": "0_original.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S035/0_original.png"
+          },
+          {
+            "img_id": "t2_0034_p1",
+            "filename": "1_amp_020.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S035/1_amp_020.png"
+          },
+          {
+            "img_id": "t2_0034_p2",
+            "filename": "2_amp_040.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S035/2_amp_040.png"
+          },
+          {
+            "img_id": "t2_0034_p3",
+            "filename": "3_amp_060.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S035/3_amp_060.png"
+          },
+          {
+            "img_id": "t2_0034_p4",
+            "filename": "4_amp_080.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S035/4_amp_080.png"
+          }
+        ]
+      },
+      {
+        "transition_id": "t2_0035",
+        "folder": "S036",
+        "images": [
+          {
+            "img_id": "t2_0035_p0",
+            "filename": "0_original.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S036/0_original.png"
+          },
+          {
+            "img_id": "t2_0035_p1",
+            "filename": "1_amp_020.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S036/1_amp_020.png"
+          },
+          {
+            "img_id": "t2_0035_p2",
+            "filename": "2_amp_040.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S036/2_amp_040.png"
+          },
+          {
+            "img_id": "t2_0035_p3",
+            "filename": "3_amp_060.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S036/3_amp_060.png"
+          },
+          {
+            "img_id": "t2_0035_p4",
+            "filename": "4_amp_080.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S036/4_amp_080.png"
+          }
+        ]
+      },
+      {
+        "transition_id": "t2_0036",
+        "folder": "S037",
+        "images": [
+          {
+            "img_id": "t2_0036_p0",
+            "filename": "0_original.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S037/0_original.png"
+          },
+          {
+            "img_id": "t2_0036_p1",
+            "filename": "1_amp_020.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S037/1_amp_020.png"
+          },
+          {
+            "img_id": "t2_0036_p2",
+            "filename": "2_amp_040.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S037/2_amp_040.png"
+          },
+          {
+            "img_id": "t2_0036_p3",
+            "filename": "3_amp_060.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S037/3_amp_060.png"
+          },
+          {
+            "img_id": "t2_0036_p4",
+            "filename": "4_amp_080.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S037/4_amp_080.png"
+          }
+        ]
+      },
+      {
+        "transition_id": "t2_0037",
+        "folder": "S038",
+        "images": [
+          {
+            "img_id": "t2_0037_p0",
+            "filename": "0_original.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S038/0_original.png"
+          },
+          {
+            "img_id": "t2_0037_p1",
+            "filename": "1_amp_020.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S038/1_amp_020.png"
+          },
+          {
+            "img_id": "t2_0037_p2",
+            "filename": "2_amp_040.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S038/2_amp_040.png"
+          },
+          {
+            "img_id": "t2_0037_p3",
+            "filename": "3_amp_060.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S038/3_amp_060.png"
+          },
+          {
+            "img_id": "t2_0037_p4",
+            "filename": "4_amp_080.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S038/4_amp_080.png"
+          }
+        ]
+      },
+      {
+        "transition_id": "t2_0038",
+        "folder": "S039",
+        "images": [
+          {
+            "img_id": "t2_0038_p0",
+            "filename": "0_original.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S039/0_original.png"
+          },
+          {
+            "img_id": "t2_0038_p1",
+            "filename": "1_amp_020.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S039/1_amp_020.png"
+          },
+          {
+            "img_id": "t2_0038_p2",
+            "filename": "2_amp_040.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S039/2_amp_040.png"
+          },
+          {
+            "img_id": "t2_0038_p3",
+            "filename": "3_amp_060.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S039/3_amp_060.png"
+          },
+          {
+            "img_id": "t2_0038_p4",
+            "filename": "4_amp_080.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S039/4_amp_080.png"
+          }
+        ]
+      },
+      {
+        "transition_id": "t2_0039",
+        "folder": "S040",
+        "images": [
+          {
+            "img_id": "t2_0039_p0",
+            "filename": "0_original.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S040/0_original.png"
+          },
+          {
+            "img_id": "t2_0039_p1",
+            "filename": "1_amp_020.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S040/1_amp_020.png"
+          },
+          {
+            "img_id": "t2_0039_p2",
+            "filename": "2_amp_040.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S040/2_amp_040.png"
+          },
+          {
+            "img_id": "t2_0039_p3",
+            "filename": "3_amp_060.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S040/3_amp_060.png"
+          },
+          {
+            "img_id": "t2_0039_p4",
+            "filename": "4_amp_080.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S040/4_amp_080.png"
+          }
+        ]
+      },
+      {
+        "transition_id": "t2_0040",
+        "folder": "S041",
+        "images": [
+          {
+            "img_id": "t2_0040_p0",
+            "filename": "0_original.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S041/0_original.png"
+          },
+          {
+            "img_id": "t2_0040_p1",
+            "filename": "1_amp_020.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S041/1_amp_020.png"
+          },
+          {
+            "img_id": "t2_0040_p2",
+            "filename": "2_amp_040.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S041/2_amp_040.png"
+          },
+          {
+            "img_id": "t2_0040_p3",
+            "filename": "3_amp_060.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S041/3_amp_060.png"
+          },
+          {
+            "img_id": "t2_0040_p4",
+            "filename": "4_amp_080.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S041/4_amp_080.png"
+          }
+        ]
+      },
+      {
+        "transition_id": "t2_0041",
+        "folder": "S042",
+        "images": [
+          {
+            "img_id": "t2_0041_p0",
+            "filename": "0_original.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S042/0_original.png"
+          },
+          {
+            "img_id": "t2_0041_p1",
+            "filename": "1_amp_020.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S042/1_amp_020.png"
+          },
+          {
+            "img_id": "t2_0041_p2",
+            "filename": "2_amp_040.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S042/2_amp_040.png"
+          },
+          {
+            "img_id": "t2_0041_p3",
+            "filename": "3_amp_060.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S042/3_amp_060.png"
+          },
+          {
+            "img_id": "t2_0041_p4",
+            "filename": "4_amp_080.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S042/4_amp_080.png"
+          }
+        ]
+      },
+      {
+        "transition_id": "t2_0042",
+        "folder": "S043",
+        "images": [
+          {
+            "img_id": "t2_0042_p0",
+            "filename": "0_original.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S043/0_original.png"
+          },
+          {
+            "img_id": "t2_0042_p1",
+            "filename": "1_amp_020.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S043/1_amp_020.png"
+          },
+          {
+            "img_id": "t2_0042_p2",
+            "filename": "2_amp_040.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S043/2_amp_040.png"
+          },
+          {
+            "img_id": "t2_0042_p3",
+            "filename": "3_amp_060.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S043/3_amp_060.png"
+          },
+          {
+            "img_id": "t2_0042_p4",
+            "filename": "4_amp_080.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S043/4_amp_080.png"
+          }
+        ]
+      },
+      {
+        "transition_id": "t2_0043",
+        "folder": "S044",
+        "images": [
+          {
+            "img_id": "t2_0043_p0",
+            "filename": "0_original.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S044/0_original.png"
+          },
+          {
+            "img_id": "t2_0043_p1",
+            "filename": "1_amp_020.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S044/1_amp_020.png"
+          },
+          {
+            "img_id": "t2_0043_p2",
+            "filename": "2_amp_040.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S044/2_amp_040.png"
+          },
+          {
+            "img_id": "t2_0043_p3",
+            "filename": "3_amp_060.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S044/3_amp_060.png"
+          },
+          {
+            "img_id": "t2_0043_p4",
+            "filename": "4_amp_080.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S044/4_amp_080.png"
+          }
+        ]
+      },
+      {
+        "transition_id": "t2_0044",
+        "folder": "S045",
+        "images": [
+          {
+            "img_id": "t2_0044_p0",
+            "filename": "0_original.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S045/0_original.png"
+          },
+          {
+            "img_id": "t2_0044_p1",
+            "filename": "1_amp_020.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S045/1_amp_020.png"
+          },
+          {
+            "img_id": "t2_0044_p2",
+            "filename": "2_amp_040.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S045/2_amp_040.png"
+          },
+          {
+            "img_id": "t2_0044_p3",
+            "filename": "3_amp_060.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S045/3_amp_060.png"
+          },
+          {
+            "img_id": "t2_0044_p4",
+            "filename": "4_amp_080.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S045/4_amp_080.png"
+          }
+        ]
+      },
+      {
+        "transition_id": "t2_0045",
+        "folder": "S046",
+        "images": [
+          {
+            "img_id": "t2_0045_p0",
+            "filename": "0_original.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S046/0_original.png"
+          },
+          {
+            "img_id": "t2_0045_p1",
+            "filename": "1_amp_020.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S046/1_amp_020.png"
+          },
+          {
+            "img_id": "t2_0045_p2",
+            "filename": "2_amp_040.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S046/2_amp_040.png"
+          },
+          {
+            "img_id": "t2_0045_p3",
+            "filename": "3_amp_060.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S046/3_amp_060.png"
+          },
+          {
+            "img_id": "t2_0045_p4",
+            "filename": "4_amp_080.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S046/4_amp_080.png"
+          }
+        ]
+      },
+      {
+        "transition_id": "t2_0046",
+        "folder": "S047",
+        "images": [
+          {
+            "img_id": "t2_0046_p0",
+            "filename": "0_original.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S047/0_original.png"
+          },
+          {
+            "img_id": "t2_0046_p1",
+            "filename": "1_amp_020.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S047/1_amp_020.png"
+          },
+          {
+            "img_id": "t2_0046_p2",
+            "filename": "2_amp_040.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S047/2_amp_040.png"
+          },
+          {
+            "img_id": "t2_0046_p3",
+            "filename": "3_amp_060.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S047/3_amp_060.png"
+          },
+          {
+            "img_id": "t2_0046_p4",
+            "filename": "4_amp_080.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S047/4_amp_080.png"
+          }
+        ]
+      },
+      {
+        "transition_id": "t2_0047",
+        "folder": "S048",
+        "images": [
+          {
+            "img_id": "t2_0047_p0",
+            "filename": "0_original.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S048/0_original.png"
+          },
+          {
+            "img_id": "t2_0047_p1",
+            "filename": "1_amp_020.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S048/1_amp_020.png"
+          },
+          {
+            "img_id": "t2_0047_p2",
+            "filename": "2_amp_040.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S048/2_amp_040.png"
+          },
+          {
+            "img_id": "t2_0047_p3",
+            "filename": "3_amp_060.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S048/3_amp_060.png"
+          },
+          {
+            "img_id": "t2_0047_p4",
+            "filename": "4_amp_080.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S048/4_amp_080.png"
+          }
+        ]
+      },
+      {
+        "transition_id": "t2_0048",
+        "folder": "S049",
+        "images": [
+          {
+            "img_id": "t2_0048_p0",
+            "filename": "0_original.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S049/0_original.png"
+          },
+          {
+            "img_id": "t2_0048_p1",
+            "filename": "1_amp_020.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S049/1_amp_020.png"
+          },
+          {
+            "img_id": "t2_0048_p2",
+            "filename": "2_amp_040.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S049/2_amp_040.png"
+          },
+          {
+            "img_id": "t2_0048_p3",
+            "filename": "3_amp_060.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S049/3_amp_060.png"
+          },
+          {
+            "img_id": "t2_0048_p4",
+            "filename": "4_amp_080.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S049/4_amp_080.png"
+          }
+        ]
+      },
+      {
+        "transition_id": "t2_0049",
+        "folder": "S050",
+        "images": [
+          {
+            "img_id": "t2_0049_p0",
+            "filename": "0_original.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S050/0_original.png"
+          },
+          {
+            "img_id": "t2_0049_p1",
+            "filename": "1_amp_020.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S050/1_amp_020.png"
+          },
+          {
+            "img_id": "t2_0049_p2",
+            "filename": "2_amp_040.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S050/2_amp_040.png"
+          },
+          {
+            "img_id": "t2_0049_p3",
+            "filename": "3_amp_060.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S050/3_amp_060.png"
+          },
+          {
+            "img_id": "t2_0049_p4",
+            "filename": "4_amp_080.png",
+            "hf_url": "https://huggingface.co/datasets/zigulaura/IDHBrainDiff/resolve/main/task2/S050/4_amp_080.png"
+          }
+        ]
+      }
+    ]
+  }
+}

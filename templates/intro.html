@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block title %}{{ study_title }} — Overview{% endblock %}
+
+{% block content %}
+<div class="card card-center">
+  <p class="section-counter">Brain histopathology</p>
+  <h2>Study Overview</h2>
+  <p class="description">
+    This study has two tasks. Complete Task 1 first, then Task 2.
+  </p>
+
+  <div class="info-box">
+    <p><strong>Task 1:</strong> Rate <strong>{{ n_task1 }} images</strong> as Real or Synthetic.</p>
+    <p><strong>Task 2:</strong> Annotate morphological features for <strong>{{ n_task2 }} transitions</strong>.</p>
+  </div>
+
+  {% if n_task1 == 0 and n_task2 == 0 %}
+  <p style="color:#e67e22;font-size:0.95rem;margin:0.75rem 0;">
+    &#9888; No images have been loaded yet. Drop images into <code>images/task1</code> and
+    <code>images/task2</code>, then run <code>build_config.py</code>.
+  </p>
+  {% endif %}
+
+  <a href="{{ url_for('task1', img_idx=0) }}"
+     class="btn btn-primary btn-large"
+     {% if n_task1 == 0 %}style="opacity:0.5;pointer-events:none;"{% endif %}>
+    Start Task 1 &rarr;
+  </a>
+</div>
+{% endblock %}

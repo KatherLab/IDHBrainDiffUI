@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block title %}Task 1{% if task1_complete %} Complete{% else %} — Not Finished{% endif %}{% endblock %}
+
+{% block content %}
+<div class="card card-center">
+{% if task1_complete %}
+  <div class="check-icon">&#10003;</div>
+  <h2>Task 1 Complete</h2>
+  <p>You have rated all <strong>{{ n_images }} images</strong>.</p>
+
+  <div class="info-box">
+    <p><strong>Task 2: Transitions &amp; Morphological Features</strong></p>
+    <p>You will now review <strong>{{ n_pairs }} transitions</strong> and select which
+       morphological features are visible in the original and counterfactual images.</p>
+  </div>
+
+  <a href="{{ url_for('task2', t_idx=0) }}" class="btn btn-primary btn-large"
+     {% if n_pairs == 0 %}style="opacity:0.5;pointer-events:none;"{% endif %}>
+    Start Task 2 &rarr;
+  </a>
+{% else %}
+  <div class="check-icon" style="color:#e67e22;">&#9888;</div>
+  <h2>Task 1 is not finished yet</h2>
+  <p>You have rated <strong>{{ task1_done }} of {{ n_images }}</strong> images.
+     Please finish Task 1 before starting Task 2.</p>
+
+  <a href="{{ url_for('task1', img_idx=resume_idx) }}" class="btn btn-primary btn-large">
+    Resume Task 1 &rarr;
+  </a>
+
+  {% if n_pairs > 0 %}
+  <div style="margin-top:1rem;">
+    <a href="{{ url_for('task2', t_idx=0, force=1) }}" class="btn btn-secondary">
+      Start Task 2 anyway &rarr;
+    </a>
+  </div>
+  {% endif %}
+{% endif %}
+</div>
+{% endblock %}

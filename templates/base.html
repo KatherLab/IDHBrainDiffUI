@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title %}{{ study_title }}{% endblock %}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="{{ url_for('index') }}" class="site-title-link">
+        <span class="site-logo">&#129504;</span>
+        <span class="site-title">{{ study_title }}</span>
+      </a>
+      {% if session.get('rater_id') and request.endpoint not in ('index', 'study_complete') %}
+        <div class="header-right">
+          <span class="expert-badge">{{ session.rater_id }}</span>
+          <span class="elapsed-timer" id="elapsed-timer" title="Time elapsed since session start">&#128337; 0:00</span>
+          <a href="{{ url_for('index') }}" class="btn-pause" title="Your progress is saved — you can resume later by entering the same ID">
+            &#9646;&#9646; Pause
+          </a>
+        </div>
+        <script>
+          (function() {
+            var startedAt = new Date("{{ session.get('started_at', '') }}");
+            var el = document.getElementById('elapsed-timer');
+            if (isNaN(startedAt)) return;
+            function update() {
+              var s = Math.floor((Date.now() - startedAt) / 1000);
+              var h = Math.floor(s / 3600);
+              var m = Math.floor((s % 3600) / 60);
+              var sec = s % 60;
+              el.textContent = '⏱ ' + (h ? h + ':' : '') +
+                (h ? String(m).padStart(2,'0') : m) + ':' +
+                String(sec).padStart(2,'0');
+            }
+            update();
+            setInterval(update, 1000);
+          })();
+        </script>
+      {% endif %}
+    </div>
+  </header>
+
+  {% with messages = get_flashed_messages(with_categories=true) %}
+    {% for category, message in messages %}
+      <div class="toast toast--{{ category }}" id="toast-{{ loop.index }}">
+        {{ message }}
+        <button class="toast-close" onclick="this.parentElement.remove()">&#x2715;</button>
+      </div>
+    {% endfor %}
+  {% endwith %}
+
+  <div class="page-layout">
+    {% if nav and session.get('rater_id') and request.endpoint not in ('index', 'study_complete') %}
+    <nav class="progress-sidebar">
+      <p class="sidebar-heading">Progress</p>
+
+      <a href="{{ url_for('task1', img_idx=0) }}"
+         class="sidebar-section{% if nav.task1_complete %} sidebar-section--done{% endif %}{% if request.endpoint in ('task1', 'intro') %} sidebar-section--active{% endif %}">
+        <span class="sidebar-section-dot" style="background:#4A7FA5"></span>
+        <span class="sidebar-section-label">Task 1 &mdash; Authenticity</span>
+        <span class="sidebar-badge{% if nav.task1_complete %} sidebar-badge--done{% endif %}">
+          {{ nav.task1_done }}/{{ nav.task1_total }}{% if nav.task1_complete %} &#10003;{% endif %}
+        </span>
+      </a>
+
+      <a href="{{ url_for('task2', t_idx=0) if nav.task2_total else url_for('task1_complete') }}"
+         class="sidebar-section{% if nav.task2_complete %} sidebar-section--done{% endif %}{% if request.endpoint in ('task2', 'task1_complete') %} sidebar-section--active{% endif %}">
+        <span class="sidebar-section-dot" style="background:#A06BC4"></span>
+        <span class="sidebar-section-label">Task 2 &mdash; Transitions</span>
+        <span class="sidebar-badge{% if nav.task2_complete %} sidebar-badge--done{% endif %}">
+          {{ nav.task2_done }}/{{ nav.task2_total }}{% if nav.task2_complete %} &#10003;{% endif %}
+        </span>
+      </a>
+
+      <div class="sidebar-overall">
+        <div class="progress-meta">
+          <span class="progress-label">Overall</span>
+          <span class="progress-pct progress-pct--total">{{ nav.overall_pct }}%</span>
+        </div>
+        <div class="progress-bar-outer">
+          <div class="progress-bar-inner progress-bar-inner--total" style="width: {{ nav.overall_pct }}%"></div>
+        </div>
+      </div>
+
+      <p class="sidebar-legend">Task 1 = rate images &bull; Task 2 = transitions</p>
+    </nav>
+    {% endif %}
+    <main class="main-content">
+      {% block content %}{% endblock %}
+    </main>
+  </div>
+
+  <footer class="site-footer">
+    <p>{{ study_title }}</p>
+  </footer>
+
+  <script src="{{ url_for('static', filename='js/annotate.js') }}"></script>
+  {% block scripts %}{% endblock %}
+</body>
+</html>

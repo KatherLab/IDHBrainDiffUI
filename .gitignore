@@ -1,0 +1,19 @@
+.env
+.venv/
+__pycache__/
+*.pyc
+.claude/
+
+# per-rater results (keep the dir, not the data)
+results/*
+!results/.gitkeep
+
+# ground-truth keys — keep private
+task1_key.csv
+task2_key.csv
+
+# study-setup tooling & local images — not needed to host (images are on HF)
+build_config.py
+populate_task1.py
+populate_task2.py
+images/

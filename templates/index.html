@@ -1,0 +1,69 @@
+{% extends "base.html" %}
+{% block title %}{{ study_title }} — Welcome{% endblock %}
+
+{% block content %}
+<div class="card card-center">
+  <h1>Brain Histopathology User Study</h1>
+  <p class="lead">
+    You will be shown brain (glioma / GBM) histopathology patches and asked to
+    complete two tasks:
+  </p>
+  <ol class="task-list">
+    <li><strong>Task 1 &mdash; Authenticity:</strong> For each image, judge whether it looks
+        <em>Real</em> (realistic histology) or <em>Synthetic</em> (AI-generated or AI-modified).</li>
+    <li><strong>Task 2 &mdash; Transitions:</strong> Review transitions of images to their
+        synthetic counterfactual counterparts (showing how an image would need to look to be
+        classified as the opposite class) and select which morphological features are visible
+        from a set of predefined options.</li>
+  </ol>
+  <ul style="margin: 0.5rem 0 1rem 1.2rem; color: #444; line-height: 1.8;">
+    <li><strong>Task 1:</strong> judge authenticity of 50 individual images.</li>
+    <li><strong>Task 2:</strong> review 50 image transitions and annotate morphological features.</li>
+  </ul>
+  <p>You do not need to complete everything in one sitting — your progress is saved
+     automatically after every response. Pause at any time by clicking "Pause" or closing
+     the browser, then resume later by re-entering your exact ID.</p>
+
+  <hr>
+
+  <form method="POST" action="{{ url_for('start') }}">
+    <div class="form-group">
+      <label for="rater_id">Your Rater ID</label>
+      <input type="text" id="rater_id" name="rater_id"
+             placeholder="e.g. jsmith_tud"
+             value="{{ prefill_id or '' }}"
+             autocomplete="off" required autofocus>
+      <small>Choose a unique ID — it identifies your results file.
+             You can use your initials + institution (e.g. <code>jsmith_tud</code>).</small>
+    </div>
+    <div class="form-group" id="password-group" style="display:none;">
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" autocomplete="current-password">
+      <small>Required for this account.</small>
+    </div>
+    {% if error %}
+      <p class="error">{{ error }}</p>
+    {% endif %}
+    <button type="submit" class="btn btn-primary btn-large">Begin Study &rarr;</button>
+  </form>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+  var idInput = document.getElementById('rater_id');
+  var pwGroup = document.getElementById('password-group');
+  var protectedIds = {{ protected_ids | tojson }};
+  function updatePwVisibility() {
+    if (protectedIds.indexOf(idInput.value.trim()) !== -1) {
+      pwGroup.style.display = 'block';
+    } else {
+      pwGroup.style.display = 'none';
+    }
+  }
+  {% if error and 'password' in error.lower() %}
+  pwGroup.style.display = 'block';
+  {% endif %}
+  idInput.addEventListener('input', updatePwVisibility);
+</script>
+{% endblock %}

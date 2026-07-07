@@ -1,0 +1,203 @@
+{% extends "base.html" %}
+{% block title %}Task 2 — Transition {{ t_idx + 1 }}/{{ n_pairs }}{% endblock %}
+
+{% block content %}
+<div class="annotation-page annotation-page--task2 sec-3">
+
+  <!-- Total progress bar -->
+  <div class="progress-header progress-header--total">
+    <div class="progress-meta">
+      <span class="progress-label">Overall progress</span>
+      <span class="progress-pct progress-pct--total">{{ overall_pct }}%</span>
+    </div>
+    <div class="progress-bar-outer">
+      <div class="progress-bar-inner progress-bar-inner--total" style="width: {{ overall_pct }}%"></div>
+    </div>
+  </div>
+
+  <!-- Task progress bar -->
+  {% set pct = (t_idx / n_pairs * 100) | int %}
+  <div class="progress-header">
+    <div class="progress-meta">
+      <span class="progress-label">
+        Task 2 &mdash; Transitions &mdash; Transition {{ t_idx + 1 }}/{{ n_pairs }}
+      </span>
+      <span class="progress-pct">{{ pct }}%</span>
+    </div>
+    <div class="progress-bar-outer">
+      <div class="progress-bar-inner" style="width: {{ pct }}%"></div>
+    </div>
+  </div>
+
+  {% set n_imgs = group | length %}
+  {% set last = n_imgs - 1 %}
+
+  <form method="POST"
+        action="{{ url_for('task2', t_idx=t_idx) }}"
+        id="morph-form"
+        class="task2-matrix-form">
+
+    <!-- All images in one row -->
+    <div class="task2-images task2-images--row">
+      {% for i in range(n_imgs) %}
+        <div class="task2-img-col {% if i == 0 %}task2-img-annotate task2-img-col--row1{% elif i == last %}task2-img-annotate task2-img-col--row2{% else %}task2-img-context{% endif %}">
+          <div class="image-container task2-img-fixed">
+            <div class="image-spinner" id="spinner-{{ i }}">Loading&hellip;</div>
+            <img src="{{ group_urls[i] }}" alt="Image {{ i + 1 }}"
+                 onload="document.getElementById('spinner-{{ i }}').style.display='none'; this.style.display='block';"
+                 onerror="document.getElementById('spinner-{{ i }}').textContent='Image failed to load';"
+                 style="display:none;">
+          </div>
+          {% if i == 0 %}
+            <p class="task2-img-label task2-img-label--annotate task2-img-label--row1">&#9632; Original</p>
+          {% elif i == last %}
+            <p class="task2-img-label task2-img-label--annotate task2-img-label--row2">&#9632; Counterfactual</p>
+          {% else %}
+            <p class="task2-img-label task2-img-label--context">intermediate</p>
+          {% endif %}
+        </div>
+      {% endfor %}
+    </div>
+
+    <!-- Feature matrix — only leftmost (0) and rightmost (last) images -->
+    <div class="task2-table-wrap">
+      <p class="feature-hint">Select all morphological features visible in each image.</p>
+      <p class="feature-hint">If there were no observable morphological changes between the original and counterfactual images, please select the same features for both.</p>
+      <table class="feature-matrix">
+        <thead>
+          <tr>
+            <th class="feat-row-header"></th>
+            {% for key, label in features %}
+              <th class="feat-col-header" title="{{ label }}">
+                <span class="feat-col-label">{{ label }}</span>
+              </th>
+            {% endfor %}
+          </tr>
+        </thead>
+        <tbody>
+          {% for row_i in [0, last] %}
+            {% set ex = existing[row_i] %}
+            {% set ex_feats = ex.features if ex else [] %}
+            <tr>
+              <td class="feat-row-header {% if row_i == 0 %}feat-row-header--row1{% else %}feat-row-header--row2{% endif %}">{% if row_i == 0 %}Original{% else %}Counterfactual{% endif %}</td>
+              {% for key, label in features %}
+                <td class="feat-cell">
+                  <input type="checkbox"
+                         name="features_{{ row_i }}"
+                         value="{{ key }}"
+                         {% if key in ex_feats %}checked{% endif %}
+                         {% if key in ('other', 'artifact') %}onchange="toggleWrap({{ row_i }}, this, '{{ key }}')"{% endif %}>
+                </td>
+              {% endfor %}
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+
+      {% for row_i in [0, last] %}
+        {% set ex = existing[row_i] %}
+        {% set ex_feats = ex.features if ex else [] %}
+        <div id="artifact-wrap-{{ row_i }}"
+             class="other-text-wrap"
+             style="display:{% if ex and 'artifact' in ex_feats %}block{% else %}none{% endif %}">
+          <label>Artifact &mdash; {% if row_i == 0 %}Original{% else %}Counterfactual{% endif %}:
+            <textarea name="artifact_text_{{ row_i }}" rows="2"
+                      placeholder="Describe the artifact&hellip;">{{ ex.artifact_text if ex else '' }}</textarea>
+          </label>
+        </div>
+        <div id="other-wrap-{{ row_i }}"
+             class="other-text-wrap"
+             style="display:{% if ex and 'other' in ex_feats %}block{% else %}none{% endif %}">
+          <label>Other &mdash; {% if row_i == 0 %}Original{% else %}Counterfactual{% endif %}:
+            <textarea name="other_text_{{ row_i }}" rows="2"
+                      placeholder="Describe the feature&hellip;">{{ ex.other_text if ex else '' }}</textarea>
+          </label>
+        </div>
+      {% endfor %}
+    </div>
+
+    <!-- Change per aspect from Original to Counterfactual: -2 .. +2 -->
+    <div class="task2-table-wrap">
+      <p class="feature-hint">For each aspect, indicate the <strong>change</strong> from the Original to the Counterfactual image:
+        <strong>0</strong> = no difference, <strong>positive</strong> = increase in the Counterfactual,
+        <strong>negative</strong> = increase in the Original.</p>
+      <table class="scale-matrix">
+        <thead>
+          <tr>
+            <th class="scale-aspect-head">Aspect</th>
+            <th class="scale-diff-head">
+              <span class="diff-end diff-end--left">&#9664; increase in Original</span>
+              <span class="diff-mid">0 = no change</span>
+              <span class="diff-end diff-end--right">increase in Counterfactual &#9654;</span>
+            </th>
+          </tr>
+        </thead>
+        {% set DELTA_WORDS = {-2: 'Strongly increased in Original', -1: 'Increased in Original', 0: 'No change', 1: 'Increased in Counterfactual', 2: 'Strongly increased in Counterfactual'} %}
+        <tbody>
+          {% for group, aspects in scale_groups %}
+            <tr class="scale-group-row"><td colspan="2">{{ group }}</td></tr>
+            {% for key, label in aspects %}
+              {% set v = deltas.get(key, 0) %}
+              <tr class="scale-row">
+                <td class="scale-aspect">{{ label }}</td>
+                <td class="scale-slidercell">
+                  <div class="scale-diffwrap">
+                    <input type="range" min="-2" max="2" step="1" class="scale-slider scale-slider--diff"
+                           name="delta_{{ key }}" value="{{ v }}"
+                           oninput="updateDeltaWord(this)">
+                    <span class="scale-word{% if v < 0 %} scale-word--orig{% elif v > 0 %} scale-word--cf{% endif %}">{{ DELTA_WORDS[v] }}</span>
+                  </div>
+                </td>
+              </tr>
+            {% endfor %}
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+
+    <div class="task2-submit-row">
+      {% if t_idx > 0 %}
+        <a href="{{ url_for('task2', t_idx=t_idx - 1) }}" class="btn btn-secondary">&larr; Back</a>
+      {% else %}
+        <a href="{{ url_for('task1_complete') }}" class="btn btn-secondary">&larr; Back</a>
+      {% endif %}
+      <button type="submit" class="btn btn-primary btn-large">
+        Save &amp; Continue &rarr;
+      </button>
+    </div>
+
+  </form>
+
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+  function toggleWrap(i, cb, feat) {
+    document.getElementById(feat + '-wrap-' + i).style.display = cb.checked ? 'block' : 'none';
+  }
+
+  var DELTA_WORDS = {
+    '-2': 'Strongly increased in Original',
+    '-1': 'Increased in Original',
+    '0':  'No change',
+    '1':  'Increased in Counterfactual',
+    '2':  'Strongly increased in Counterfactual'
+  };
+  function updateDeltaWord(sl) {
+    var v = sl.value;
+    var span = sl.parentElement.querySelector('.scale-word');
+    span.textContent = DELTA_WORDS[v];
+    span.classList.remove('scale-word--orig', 'scale-word--cf');
+    if (+v < 0) span.classList.add('scale-word--orig');
+    else if (+v > 0) span.classList.add('scale-word--cf');
+  }
+
+  // Preload the next transition's frames once this page's images have loaded,
+  // so advancing to the next transition is smooth (also warms the server cache).
+  window.addEventListener('load', function () {
+    var next = {{ preload_urls | tojson }};
+    next.forEach(function (u) { (new Image()).src = u; });
+  });
+</script>
+{% endblock %}
